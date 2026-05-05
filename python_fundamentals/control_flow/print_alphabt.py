@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-import string
 
-for letter in string.ascii_lowercase:
-    if letter == 'e' or letter == 'q':
+for i in range(97, 123):
+    if chr(i) == 'e' and chr(i) == 'q':
         continue
-    print(letter, end='')
+    print(chr(i), end='')
