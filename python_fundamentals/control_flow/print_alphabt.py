@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
 for i in range(97, 123):
-    if chr(i) == 'e' and chr(i) == 'q':
+    if chr(i) == 'e' or chr(i) == 'q':
         continue
     print(chr(i), end='')
