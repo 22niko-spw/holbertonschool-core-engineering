@@ -1,4 +1,4 @@
-#!/usr/bin/bash python3
+#!/usr/bin/env python3
 
 from calculator_1 import add
 if __name__ == "__main__":
