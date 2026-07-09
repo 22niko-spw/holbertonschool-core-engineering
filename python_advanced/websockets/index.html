@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>WebSocket Chat</h1>
+            <span id="status" class="status disconnected">Disconnected</span>
+        </header>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="chat-form" class="chat-form">
+            <input
+                type="text"
+                id="message-input"
+                placeholder="Écris un message..."
+                autocomplete="off"
+            >
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

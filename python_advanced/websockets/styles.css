@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #1e1f26;
+    color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 420px;
+    height: 600px;
+    background: #26272f;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.chat-header {
+    padding: 16px 20px;
+    background: #2f303a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3a3b46;
+}
+
+.chat-header h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.status {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.status.connected {
+    background: #1f4d3a;
+    color: #6fe3a8;
+}
+
+.status.disconnected {
+    background: #4d1f1f;
+    color: #e36f6f;
+}
+
+.messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message {
+    max-width: 75%;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background: #4a63e8;
+    color: white;
+}
+
+.message.received {
+    align-self: flex-start;
+    background: #383944;
+}
+
+.message.system {
+    align-self: center;
+    background: transparent;
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.chat-form {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #3a3b46;
+    gap: 8px;
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #3a3b46;
+    background: #1e1f26;
+    color: #e8e8e8;
+    font-size: 14px;
+}
+
+#message-input:focus {
+    outline: none;
+    border-color: #4a63e8;
+}
+
+.chat-form button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background: #4a63e8;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.chat-form button:hover {
+    background: #3a53d8;
+}
